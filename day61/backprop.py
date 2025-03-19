@@ -10,6 +10,7 @@ def softmax_kernel(
 ):
     pid = tl.program_id(0)
     
+    
     if pid >= batch_size:
         return
         
